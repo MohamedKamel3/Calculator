@@ -14,9 +14,14 @@ class _CalculatorState extends State<Calculator> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: AppBar(
+        backgroundColor: Colors.black,
         centerTitle: true,
-        title: Text("Calculator"),
+        title: Text(
+          "Calculator",
+          style: TextStyle(color: Colors.white),
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -29,13 +34,13 @@ class _CalculatorState extends State<Calculator> {
               height: 50,
               width: double.infinity,
               decoration: BoxDecoration(
-                color: Colors.black,
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(15),
               ),
               child: Text(
                 output == '' ? "0" : output,
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Colors.black,
                   fontSize: 30,
                 ),
               ),
